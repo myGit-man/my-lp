@@ -1,55 +1,96 @@
+/* 全体のスタイル */
 body {
-    font-family: sans-serif;
-    line-height: 1.6;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background-color: #f8f9fa; /* 少し落ち着いた背景色 */
+    color: #343a40;
 }
 
+/* ヘッダー */
 header {
-    background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 4rem 2rem;
     text-align: center;
+    /* 美しいグラデーション */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-bottom: 5px solid #667eea;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
 
 header nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
 }
 
+header nav a:hover {
+    opacity: 0.8;
+}
+
+/* メインコンテンツ */
 main {
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 800px;
     margin: auto;
 }
 
+/* カードデザイン */
 section {
     background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 影をつけて立体感を出す */
+    border-left: 5px solid #764ba2;
 }
 
+section h2 {
+    margin-top: 0;
+    color: #764ba2;
+}
+
+/* フッター */
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #343a40;
     color: #fff;
 }
 
+/* ブログ記事のスタイル */
 #posts-container .post {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 15px;
 }
 
 #posts-container .post:last-child {
     border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#posts-container .post h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#posts-container .post p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
 }
