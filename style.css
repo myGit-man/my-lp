@@ -14,8 +14,8 @@ header {
     padding: 4rem 2rem;
     text-align: center;
     /* 美しいグラデーション */
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-bottom: 5px solid #667eea;
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); /* 明るいグリーン系グラデーション */
+    border-bottom: 5px solid #84fab0;
 }
 
 header h1 {
@@ -55,12 +55,12 @@ section {
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* 影をつけて立体感を出す */
-    border-left: 5px solid #764ba2;
+    border-left: 5px solid #8fd3f4;
 }
 
 section h2 {
     margin-top: 0;
-    color: #764ba2;
+    color: #8fd3f4;
 }
 
 /* フッター */
